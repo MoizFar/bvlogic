@@ -1,0 +1,16 @@
+@extends('layouts.app')
+
+@section('title', __('site.home'))
+
+@section('content')
+
+@php app()->setLocale(session('locale', app()->getLocale())) @endphp
+    @include('partials.hero-slider')
+    @include('partials.partners')
+    @include('partials.achievements')
+    @include('partials.development-process')
+    @include('partials.industries-we-serve')
+    @include('partials.our-resources')
+    @include('partials.technologies-expertise')
+    @include('partials.contact-form')
+@endsection
